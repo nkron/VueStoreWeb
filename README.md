@@ -1,6 +1,6 @@
-# CryptoBuyer
+# Stonks Master
 
-> A Vue.js app utilizing all of Vue's unique features to make a responsive SPA
+> A Vue.js app utilizing all of Vue's unique features to make a responsive SPA to buy and sell stonks
 
 ## Build Setup
 
