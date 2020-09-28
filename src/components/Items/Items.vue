@@ -55,7 +55,12 @@ export default {
       // eslint-disable-next-line no-return-assign
         .then(response => response.status === 200 ? alert('Record deleted :(') : alert('Something went wrong with deleting'))
       this.getAPIData()
-      this.$forceUpdate()
+    }
+  },
+  watch: { // somehow this doesn't work
+    items: function (value) {
+      console.log(value)
+      this.items = value
     }
   },
   mounted () {

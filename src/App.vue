@@ -21,10 +21,6 @@ export default {
 </script>
 
 <style>
-    body {
-
-    }
-
     .slide-enter-active {
         animation: slide-in 200ms ease-out forwards;
     }

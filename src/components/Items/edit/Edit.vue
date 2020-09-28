@@ -8,6 +8,7 @@
                     <div class="form-group">
                         <label for="id">Id</label>
                         <input
+                                readonly="readonly"
                                 type="text"
                                 id="id"
                                 class="form-control"
