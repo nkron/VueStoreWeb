@@ -8,26 +8,26 @@
                     <div class="form-group">
                         <label for="itemName">Name</label>
                         <input
-                                type="text"
-                                id="itemName"
-                                class="form-control"
-                                v-model.trim.lazy="item.itemName">
+                          type="text"
+                          id="itemName"
+                          class="form-control"
+                          v-model.trim.lazy="item.itemName">
                     </div>
                     <div class="form-group">
                         <label for="cost">Cost</label>
                         <input
-                                type="number"
-                                id="cost"
-                                class="form-control"
-                                v-model.number.lazy="item.cost">
+                          type="number"
+                          id="cost"
+                          class="form-control"
+                          v-model.number.lazy="item.cost">
                 </div>
               </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 col-sm-offset-2 col-md-6 offset-md-3">
                     <button
-                            class="btn btn-primary w-100"
-                            @click.prevent="mySubmit">Submit
+                      class="btn btn-primary w-100"
+                      @click.prevent="mySubmit">Submit
                     </button>
                 </div>
             </div>

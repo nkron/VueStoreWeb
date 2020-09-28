@@ -1,5 +1,5 @@
 <template>
-    <div class="col-sm-12">
+    <div class="col-sm-10 offset-sm-1">
       <h1>Max Item Values</h1>
       <table class="table table-hover">
         <thead class="thead-light">

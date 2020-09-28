@@ -1,8 +1,8 @@
 <template>
-    <div class="col-sm-12">
+    <div class="col-sm-10 offset-sm-1">
       <h1>Items</h1>
       <p>
-      <span class="">Don't see the item you're looking for? </span>
+      <span>Don't see the item you're looking for? </span>
       <router-link to="create" activeClass="active"><a>Create one!</a></router-link>
       </p>
       <table class="table table-hover">
@@ -14,16 +14,19 @@
         </thead>
         <tbody class="table-hover">
           <tr v-for="item in items" :key=item.id>
-            <td>{{ item.id }}</td>
+            <th scope="row">{{ item.id }}</th>
             <td>{{ item.itemName }}</td>
             <td>{{ item.cost }}</td>
-            <td class="ml-auto">
+            <td>
+              <div class="ml-3">
             <router-link :to="'edit/'+item.id" item.id><button class="btn btn-primary">Edit</button></router-link>
             &nbsp;&nbsp;&nbsp;
             <button
             class="btn btn-danger"
             @click.prevent="myDelete(item.id)"
-            >Delete</button></td>
+            >Delete</button>
+            </div>
+            </td>
           </tr>
         </tbody>
 
