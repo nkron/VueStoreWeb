@@ -1,9 +1,16 @@
-import Home from './components/Home.vue'
-import Portfolio from './components/portfolio/Portfolio.vue'
-import Stocks from './components/stocks/Stocks.vue'
+import Items from './components/Items/Items.vue'
+import Create from './components/Items/create/Create.vue'
+import Edit from './components/Items/edit/Edit.vue'
+import MaxItems from './components/Items/MaxItems'
 
 export const routes = [
-  { path: '/', component: Home },
-  { path: '/portfolio', component: Portfolio },
-  { path: '/stocks', component: Stocks }
+  {
+    path: '/',
+    component: Items,
+    children: [
+    ]
+  },
+  { path: '/max', component: MaxItems },
+  { path: '/create', component: Create },
+  { path: '/edit/:id', component: Edit }
 ]

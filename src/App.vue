@@ -2,7 +2,7 @@
     <div class="container">
         <app-header></app-header>
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-sm-12">
                 <transition name="slide" mode="out-in">
                     <router-view></router-view>
                 </transition>
@@ -16,16 +16,13 @@ import Header from './components/Header.vue'
 export default {
   components: {
     appHeader: Header
-  },
-  created () {
-    this.$store.dispatch('initStocks')
   }
 }
 </script>
 
 <style>
     body {
-        padding: 30px;
+
     }
 
     .slide-enter-active {
