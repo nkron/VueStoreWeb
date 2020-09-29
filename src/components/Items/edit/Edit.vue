@@ -53,9 +53,9 @@ export default {
       axios.patch('https://pocstoreapi.azurewebsites.net/api/Items', { id: this.item.id, itemName: this.item.itemName, cost: this.item.cost })
         .then(r => {
           if (r.status !== 200) {
-            alert('Something went wrong with your record creation')
+            alert('Something went wrong with your record editing')
           } else {
-            alert('Record created!')
+            alert('Record edited!')
             window.location.href = '/'
           }
         })

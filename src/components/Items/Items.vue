@@ -53,7 +53,7 @@ export default {
     myDelete (id) {
       axios.delete('https://pocstoreapi.azurewebsites.net/api/Items/' + id)
       // eslint-disable-next-line no-return-assign
-        .then(response => response.status === 200 ? alert('Record deleted :(') : alert('Something went wrong with deleting'))
+        .then(response => response.status === 204 ? alert('Record deleted :(') : alert('Something went wrong with deleting'))
       this.getAPIData()
     }
   },

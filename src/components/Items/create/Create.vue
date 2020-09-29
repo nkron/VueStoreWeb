@@ -43,7 +43,7 @@ export default {
     mySubmit () {
       axios.post('https://pocstoreapi.azurewebsites.net/api/Items?itemName=' + this.item.itemName + '&cost=' + this.item.cost)
         .then(r => {
-          if (r.status !== 200) {
+          if (r.status !== 201) {
             alert('Something went wrong with your record creation')
           } else {
             alert('Record created!')
