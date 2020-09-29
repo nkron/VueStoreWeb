@@ -58,9 +58,11 @@ export default {
     }
   },
   watch: { // somehow this doesn't work
-    items: function (value) {
-      console.log(value)
-      this.items = value
+    items: {
+      deep: true,
+      handler () {
+        this.getAPIData()
+      }
     }
   },
   mounted () {
